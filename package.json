@@ -1,10 +1,10 @@
 {
-  "name": "nodegui-mvc-starter",
+  "name": "sticky-todo",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "TeckFreak",
+  "author": "RinneganTech",
   "repository": {
-    "url": "https://github.com/RinneganTech/nodegui-mvc-starter"
+    "url": "https://github.com/RinneganTech/sticky-todo"
   },
   "license": "MIT",
   "private": true,
