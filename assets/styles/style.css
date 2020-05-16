@@ -17,3 +17,11 @@ QLabel {
 	background-color: #00000000;
 	font-size: 20px;
 }
+
+QPushButton {
+	color: white;
+	background-color: #F44242;
+	font-size: 14px;
+	border-radius: 6px;
+	text-align: center;
+}

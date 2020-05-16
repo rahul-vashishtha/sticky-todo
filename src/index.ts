@@ -1,3 +1,10 @@
+/*
+ * File: index.ts
+ * Project: sticky-todo
+ * File Created: Friday, 15th May 2020 12:30:02 am
+ * Copyright : © 2020 Rinnegan Technologies Pvt. Ltd.
+ */
+
 import UI = require("@nodegui/nodegui");
 import { MainWindow } from "./views/MainWindow";
 
