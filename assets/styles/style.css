@@ -1,5 +1,5 @@
 * {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Noto Sans", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -15,7 +15,7 @@
 QLabel {
 	color: #1b1b1b;
 	background-color: #00000000;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 QPushButton {
@@ -24,4 +24,9 @@ QPushButton {
 	font-size: 14px;
 	border-radius: 6px;
 	text-align: center;
+}
+
+QCheckBox {
+	background: #00000000;
+	font-size: 14px;
 }
