@@ -17,7 +17,7 @@ class Application {
 	 * Load application wide assets.
 	 */
   private loadAssets(): void {
-    UI.QFontDatabase.addApplicationFont("../assets/fonts/Montserrat.ttf");
+    UI.QFontDatabase.addApplicationFont("../assets/fonts/NotoSans-Regular.ttf");
   }
 
   public start(): void {
