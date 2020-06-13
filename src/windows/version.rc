@@ -1,0 +1,29 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+// Application icon
+1 ICON icon.ico
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "Rinnegan Technologies Pvt. Ltd."
+      VALUE "FileDescription", "A simple sticky to-do application."
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "sticky-todo"
+      VALUE "LegalCopyright", "Rinnegan Technologies Pvt. Ltd."
+      VALUE "OriginalFilename", "sticky-todo.exe"
+      VALUE "ProductName", "Sticky ToDo"
+      VALUE "ProductVersion", "1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END
