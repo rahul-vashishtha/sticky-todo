@@ -2,7 +2,7 @@
 
 # Sticky To-Do
 
-It is a simple to-do application which resides on your desktop as a sticky note. 
+It is a simple cross-platform to-do application which resides on your desktop as a sticky note. 
 
 ## How to download
 
