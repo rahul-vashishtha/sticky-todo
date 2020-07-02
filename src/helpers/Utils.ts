@@ -6,10 +6,13 @@
  */
 
 import { QInputDialog, InputMode } from "@nodegui/nodegui";
+import UI = require("@nodegui/nodegui");
+import path from "path";
 
 export class Utils {
     public static getInputFromDialog(title: string, labelText: string, onAcceptCallback: (s: string) => void): void {
         const input = new QInputDialog();
+        input.setWindowIcon(new UI.QIcon(path.resolve(__dirname, "../assets/images/logo.png")))
         input.setInputMode(InputMode.TextInput);
         input.setWindowTitle(title);
         input.setLabelText(labelText);
