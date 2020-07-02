@@ -7,6 +7,8 @@
 
 import UI = require("@nodegui/nodegui");
 import { MainWindow } from "./views/MainWindow";
+import { ConfigManager } from "./helpers/ConfigManager";
+import { ListManager } from "./helpers/ListManager";
 
 class Application {
   constructor() {
@@ -21,6 +23,12 @@ class Application {
   }
 
   public start(): void {
+    // Initialize and load Configurations
+    ConfigManager.initConfig();
+
+    // Initialize and load Lists
+    ListManager.initList();
+
     let mainWindow: MainWindow = new MainWindow();
     mainWindow.show();
 
