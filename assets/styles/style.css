@@ -12,19 +12,176 @@
 	background-color: #f3f3f3;
 }
 
-QLabel {
+QPushButton {
+	color: #fff;
+	background-color: #f44242;
+	font-size: 12px;
+	border: 0px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: 500;
+}
+
+QPushButton:hover {
+	background-color: #ff0000;
+}
+
+QPushButton:pressed {
+	background-color: #b10000;
+}
+
+QPushButton[type="secondary"] {
+	color: #1b1b1b;
+	background-color: #fff;
+	border: 1px outset #a0a0a0;
+}
+
+QPushButton[type="secondary"]:hover {
+	color: #ff0000;
+	background-color: #fff;
+	border: 2px outset #cacaca;
+}
+
+QPushButton[type="secondary"]:pressed {
+	color: #ff0000;
+	background-color: #fff;
+	border: 0px outset #a0a0a0;
+}
+
+QPushButton[type="text"] {
 	color: #1b1b1b;
 	background-color: #00000000;
+	border: 0px;
+	text-align: left;
+}
+
+QPushButton[type="text"]:hover {
+	color: #f44242;
+}
+
+QPushButton[type="text"]:pressed {
+	color: #ff0000;
+}
+
+QPushButton[type="navBtn"] {
+	color: #404040;
+	background-color: #00000000;
+	text-align: left;
+	height: 50px;
+	border-radius: 0;
+	padding-left: 25px;
+	padding-right: 25px;
 	font-size: 15px;
 }
 
-QPushButton {
-	color: white;
-	background-color: #F44242;
-	font-size: 14px;
-	border-radius: 6px;
-	text-align: center;
+QPushButton[type="navBtn"]:hover {
+	background-color: #eaeaea;
 }
+
+QPushButton[type="navBtn"]:pressed {
+	color: #fff;
+	background-color: #ff0000;
+}
+
+QPushButton[type="close"] {
+	background: #f44242;
+	border: 0px;
+	border-radius: 8px;
+}
+
+QPushButton[type="close"]:hover {
+	background: #ff0000;
+}
+
+QPushButton[type="close"]:pressed {
+	background: #ff6159;
+}
+
+QPushButton[type="minimize"] {
+	background: #ffae00;
+	border: 0px;
+	border-radius: 8px;
+}
+
+QPushButton[type="minimize"]:hover {
+	background: #ff9b03;
+}
+
+QPushButton[type="minimize"]:pressed {
+	background: #ffd14d;
+}
+
+QPushButton[type="maximize"] {
+	color: #1b1b1b;
+	background-color: #00000000;
+	border: 0px;
+	text-align: left;
+}
+
+QPushButton[type="maximize"]:hover {
+	color: #f44242;
+}
+
+QPushButton[type="maximize"]:pressed {
+	color: #ff0000;
+}
+
+QWidget[type="card"] {
+	background-color: #fff;
+	border: 2px outset #dadada;
+	border-radius: 9px;
+	padding: 15px;
+	margin: 3px 20px;
+	flex-direction: column;
+	flex: 1;
+}
+
+QLabel {
+	color: #1b1b1b;
+	background-color: #00000000;
+	font-size: 14px;
+}
+
+QTextEdit {
+	background-color: white;
+	font-size: 14px;
+}
+
+QPlainTextEdit {
+	background-color: white;
+	font-size: 14px;
+}
+
+QLineEdit {
+	background-color: white;
+	font-size: 14px;
+}
+
+QScrollArea {
+	border: 0px;
+	border-color: #00000000;
+}
+
+QScrollBar::vertical {
+	width: 6px;
+}
+
+QScrollBar::handle:vertical {
+	background: #f44242;
+	border-radius: 3px;
+}
+
+QComboBox {
+	padding-left: 10px;
+	border: 0px;
+	background-color: white;
+	font-size: 14px;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
 
 QCheckBox {
 	background: #00000000;
