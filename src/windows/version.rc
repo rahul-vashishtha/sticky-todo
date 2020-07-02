@@ -5,8 +5,8 @@
 1 ICON icon.ico
 
 1 VERSIONINFO
-FILEVERSION     1,0,0,0
-PRODUCTVERSION  1,0,0,0
+FILEVERSION     0,1,0,0
+PRODUCTVERSION  0,1,0,0
 BEGIN
   BLOCK "StringFileInfo"
   BEGIN
@@ -14,12 +14,12 @@ BEGIN
     BEGIN
       VALUE "CompanyName", "Rinnegan Technologies Pvt. Ltd."
       VALUE "FileDescription", "A simple sticky to-do application."
-      VALUE "FileVersion", "1.0"
-      VALUE "InternalName", "sticky-todo"
+      VALUE "FileVersion", "0.1 (Beta)"
+      VALUE "InternalName", "Sticky-ToDo"
       VALUE "LegalCopyright", "Rinnegan Technologies Pvt. Ltd."
-      VALUE "OriginalFilename", "sticky-todo.exe"
+      VALUE "OriginalFilename", "Sticky-ToDo.exe"
       VALUE "ProductName", "Sticky ToDo"
-      VALUE "ProductVersion", "1.0"
+      VALUE "ProductVersion", "0.1 (Beta)"
     END
   END
   BLOCK "VarFileInfo"

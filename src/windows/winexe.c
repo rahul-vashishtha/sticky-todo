@@ -8,7 +8,7 @@
 /*
  * ONLY FOR WINDOWS
  * Compile using Visual C++: 
- * rc version.res
+ * rc version.rc
  * cl winexe.c version.res /Fe"Sticky-ToDo"
  */
 
@@ -24,5 +24,6 @@
 int main()
 {
     ShowWindow(GetConsoleWindow(), SW_HIDE);
-    return system("qode.exe");
+    WinExec("./qode.exe", SW_HIDE);
+    // return system("qode.exe");
 }
