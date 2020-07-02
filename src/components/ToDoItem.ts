@@ -7,19 +7,20 @@
 
 import * as UI from "@nodegui/nodegui";
 import { Utils } from "../helpers/Utils";
+import path from "path";
 
 export class ToDoItem extends UI.QWidget {
     private onItemDeleted?: () => void;
+    private onTaskUpdated?: (newInput: string) => void;
+    private onCheckToggled?: (checked: boolean) => void;
 
-    constructor(private text: string) {
+    constructor(private task: any) {
         super();
 
         this.initializeComponents();
     }
 
     private initializeComponents() {
-        const layout = new UI.QBoxLayout(UI.Direction.LeftToRight);
-        this.setLayout(layout);
         this.setMinimumSize(290, 50);
         this.setMaximumSize(1920, 50);
         this.setInlineStyle(`
@@ -31,8 +32,12 @@ export class ToDoItem extends UI.QWidget {
             padding-right: 10px;
         `);
 
+        const layout = new UI.QBoxLayout(UI.Direction.LeftToRight);
+        this.setLayout(layout);
+
         const checkbox = new UI.QCheckBox();
-        checkbox.setText(this.text);
+        checkbox.setText(this.task.taskName);
+        checkbox.setChecked(this.task.isChecked);
         checkbox.addEventListener("toggled", (checked) => {
             if (checked) {
                 checkbox.setInlineStyle(`
@@ -48,11 +53,14 @@ export class ToDoItem extends UI.QWidget {
                     font-style: normal;
                 `);
             }
+
+            this.onCheckToggled?.call(this, checked);
         });
 
+        const pixmap: UI.QPixmap = new UI.QPixmap(path.resolve(__dirname, "../assets/images/ic_delete.png"));
         const btnDelete = new UI.QLabel();
-        btnDelete.setText("X");
         btnDelete.setCursor(UI.CursorShape.PointingHandCursor);
+        btnDelete.setPixmap(pixmap.scaled(25, 25, UI.AspectRatioMode.KeepAspectRatio, UI.TransformationMode.SmoothTransformation));
         btnDelete.addEventListener(UI.WidgetEventTypes.MouseButtonRelease, () => {
             this.onItemDeleted?.call(this);
         });
@@ -61,6 +69,8 @@ export class ToDoItem extends UI.QWidget {
             Utils.getInputFromDialog("Edit Task", "Enter the updated task", (input) => {
                 if (!Utils.isEmptyorWhitespace(input)) {
                     checkbox.setText(input);
+
+                    this.onTaskUpdated?.call(this, input);
                 }
             });
         });
@@ -75,5 +85,13 @@ export class ToDoItem extends UI.QWidget {
 
     public onDeleteClicked(callback: () => void): void {
         this.onItemDeleted = callback;
+    }
+
+    public onTaskUpdate(callback: (updatedTask: string) => void): void {
+        this.onTaskUpdated = callback;
+    }
+
+    public onCheckToggle(callback: (checked: boolean) => void): void {
+        this.onCheckToggled = callback;
     }
 }
