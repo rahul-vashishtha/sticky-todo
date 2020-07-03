@@ -6,7 +6,16 @@ It is a simple cross-platform to-do application which resides on your desktop as
 
 ## How to download
 
-You can download the latest binaries for Windows or Debian Linux from the releases page. 
+You can download the latest binaries for Windows or Debian Linux from the releases page.
+
+## Platform Supported
+
+- **Windows:** Windows 7 & above.
+
+- **Linux:** Debian/Ubuntu Flavors based on Ubuntu 18.04 & above. (Currently, Debian releases are provided. For other Linux distros with minimum GCC v7, you can create your own build).
+
+- **Mac:** Application supports Mac OS Yosemite & above. (You can contribute to provide Mac release :))
+
 
 #### Note for Developers:
 
