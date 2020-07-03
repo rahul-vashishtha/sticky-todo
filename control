@@ -1,0 +1,9 @@
+Package: sticky-todo
+Version: 0.1.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: Rinnegan Technologies
+Description: A simple to-do application which resides on your desktop as a sticky note.
