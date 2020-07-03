@@ -105,3 +105,5 @@ dist
 pnpm-lock.yaml
 
 deploy/win32/build
+
+releases
