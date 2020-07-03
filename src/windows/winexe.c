@@ -23,7 +23,23 @@
 
 int main()
 {
+    STARTUPINFO si;
+    PROCESS_INFORMATION pi;
+
+    ZeroMemory(&si, sizeof(si));
+    si.cb = sizeof(si);
+    ZeroMemory(&pi, sizeof(pi));
+
     ShowWindow(GetConsoleWindow(), SW_HIDE);
-    WinExec("./qode.exe", SW_HIDE);
-    // return system("qode.exe");
+
+    CreateProcess("./qode.exe", "", NULL, // Process handle not inheritable
+                  NULL,                   // Thread handle not inheritable
+                  FALSE,                  // Set handle inheritance to FALSE
+                  0,                      // No creation flags
+                  NULL,                   // Use parent's environment block
+                  NULL,                   // Use parent's starting directory
+                  &si,                    // Pointer to STARTUPINFO structure
+                  &pi);
+
+    return 0;
 }
