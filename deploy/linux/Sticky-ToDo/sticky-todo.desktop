@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment=A simple to-do application which resides on your desktop as a sticky note.
+Terminal=false
+Name=Sticky To-Do
+Exec=/usr/bin/Sticky-ToDo
+Type=Application
+Icon=/usr/lib/sticky-todo/appicon.png
+Name[en_IN]=Sticky To-Do
