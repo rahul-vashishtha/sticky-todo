@@ -15,7 +15,7 @@
     "start:watch": "nodemon -e js,ts,css --ignore dist/ --ignore node_modules/ --exec pnpm start"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.22.0",
+    "@nodegui/nodegui": "^0.24.0",
     "@types/auto-launch": "^5.0.1",
     "auto-launch": "^5.0.5",
     "configparser": "^0.3.6",

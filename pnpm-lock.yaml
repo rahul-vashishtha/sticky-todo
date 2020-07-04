@@ -1,11 +1,11 @@
 dependencies:
-  '@nodegui/nodegui': 0.22.0
+  '@nodegui/nodegui': 0.24.0
   '@types/auto-launch': 5.0.1
   auto-launch: 5.0.5
   configparser: 0.3.6
   moment: 2.27.0
 devDependencies:
-  '@nodegui/packer': 1.4.1_@nodegui+nodegui@0.22.0
+  '@nodegui/packer': 1.4.1_@nodegui+nodegui@0.24.0
   '@types/node': 14.0.13
   clean-webpack-plugin: 3.0.0_webpack@4.43.0
   file-loader: 6.0.0_webpack@4.43.0
@@ -33,7 +33,7 @@ packages:
       progress: 2.0.3
     resolution:
       integrity: sha512-x/rIewhjnLhf2b3lAy5ZIPSTS39LRpwMTKeEg6sn4RwvWwyNmreGzpvGi6Gkbl6FUpftn70nfOBOpaeO3hO8PQ==
-  /@nodegui/nodegui/0.22.0:
+  /@nodegui/nodegui/0.24.0:
     dependencies:
       '@nodegui/artifact-installer': 1.1.0
       '@nodegui/qode': 2.1.0
@@ -44,15 +44,15 @@ packages:
       memoize-one: 5.1.1
       node-addon-api: 3.0.0
       postcss-nodegui-autoprefixer: 0.0.7
-      prebuild-install: 5.3.4
+      prebuild-install: 5.3.5
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-Kw8Tij0JSS7ByJiFBJJIQlg6NZ2CEHnEpltM2Y6R5dL9qg8UYVSH0YM2FW2TxxstksQGthlzesL/VsGStTWEUQ==
-  /@nodegui/packer/1.4.1_@nodegui+nodegui@0.22.0:
+      integrity: sha512-jVwwleBoYRHzgpaqYi0FFlhFQyf2xLzd/UIo1ZkrWRjyTDrghiMzUtsx7FGAB9lWSUQiIydj58RNUNPvkmxegw==
+  /@nodegui/packer/1.4.1_@nodegui+nodegui@0.24.0:
     dependencies:
       '@nodegui/artifact-installer': 1.1.0
-      '@nodegui/nodegui': 0.22.0
+      '@nodegui/nodegui': 0.24.0
       commander: 4.1.1
       fs-extra: 8.1.0
       plist: 3.0.1
@@ -1159,7 +1159,7 @@ packages:
       integrity: sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
   /duplexer2/0.1.4:
     dependencies:
-      readable-stream: 2.1.5
+      readable-stream: 2.3.7
     resolution:
       integrity: sha1-ixLauHjA1p4+eJEFFmKjL8a93ME=
   /duplexify/3.7.1:
@@ -2747,7 +2747,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-03eXong5NLnNCD05xscnGKGDZ98CyzoqPSMjOe6SuoQY7Z2hIj0Ld1g/O/UQRuOle2aRtiIRDg9tDcTGAkLfKw==
-  /prebuild-install/5.3.4:
+  /prebuild-install/5.3.5:
     dependencies:
       detect-libc: 1.0.3
       expand-template: 2.0.3
@@ -2768,7 +2768,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-AkKN+pf4fSEihjapLEEj8n85YIw/tN6BQqkhzbDc0RvEZGdkpJBGMUYx66AAMcPG2KzmPQS7Cm16an4HVBRRMA==
+      integrity: sha512-YmMO7dph9CYKi5IR/BzjOJlRzpxGGVo1EsLSUZ0mt/Mq0HWZIHOKHHcHdT69yG54C9m6i45GpItwRHpk0Py7Uw==
   /process-nextick-args/1.0.7:
     resolution:
       integrity: sha1-FQ4gt1ZZCtP5EJPyWk8q2L/zC6M=
@@ -3900,7 +3900,7 @@ packages:
     resolution:
       integrity: sha1-AwiOnr+edWtpdRYR0qXvWRSCyZU=
 specifiers:
-  '@nodegui/nodegui': ^0.22.0
+  '@nodegui/nodegui': ^0.24.0
   '@nodegui/packer': ^1.4.1
   '@types/auto-launch': ^5.0.1
   '@types/node': ^14.0.13
